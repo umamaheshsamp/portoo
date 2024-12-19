@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    background: #6c63ff;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #5348c8;
+}
+
+/* Header Section */
+header {
+    background: #6c63ff;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+header h1 span {
+    color: #ffd700;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6c63ff;
+}
+
+/* Section Styles */
+section {
+    margin: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list li, .certificates-list li {
+    margin-bottom: 1rem;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #6c63ff;
+    color: white;
+}
