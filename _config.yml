@@ -1,4 +1,18 @@
-title : My first
+---
+layout: default
+title: Uma Mahesh Reddy
+---
 
-theme : jekyll-theme-Midnight
+# Hi, I'm Uma Mahesh Reddy 👋
+Welcome to my portfolio! I specialize in Data Analysis, Python, SQL, and Data Visualization.  
+
+## Projects
+- [Wine Quality Prediction](https://github.com/username/wine-quality)
+- [Ticket Price Prediction](https://github.com/username/ticket-price)
+
+## Contact
+- Email: [umamaheshreddy06981@gmail.com](mailto:umamaheshreddy06981@gmail.com)
+- LinkedIn: [Profile](https://www.linkedin.com/in/uma-mahesh-525249212)
+
+theme: minima
 
