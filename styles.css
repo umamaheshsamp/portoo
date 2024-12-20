@@ -29,15 +29,16 @@ body {
 }
 
 .hi {
-    font-size: 1.5rem; /* Slightly smaller than your name */
+    font-size: 2rem; /* Slightly smaller than your name */
     color: #e91e63; /* Pink color */
     display: block; /* Places it on a separate line above the name */
     font-weight: normal; /* Makes it visually distinct from the name */
-    margin-bottom: 8px; /* Adds spacing between "HI" and your name */
-    position: absolute;
+    margin-bottom: -10px; /* Adds spacing between "HI" and your name */
+    position: relative;
     top: 10%; /* Adjust vertical positioning */
     left: 5%; 
 }
+
 
 
 .subtitle {
