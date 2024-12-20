@@ -19,21 +19,22 @@ body {
     border-bottom: none; /* Removed pink line */
 }
 
-.hello {
-    font-size: 2rem;
-    color: #e91e63; /* Pink color */
-    position: absolute;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    margin: 0;
-}
-
 .name {
     font-size: 3rem;
-    color: #ffffff; /* White color for your name */
+    color: #ffffff; /* White color for the name */
     font-weight: bold;
-    margin-bottom: 10px;
+    position: relative; /* Required for positioning the "HELLO" inside */
 }
+
+.hello {
+    font-size: 1.2rem;
+    color: #e91e63; /* Pink color */
+    position: absolute;
+    top: -20px; /* Adjust to your preference */
+    left: 0; /* Align to the left of the name */
+}
+
+
 
 .subtitle {
     font-size: 1.5rem;
