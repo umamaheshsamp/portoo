@@ -19,23 +19,23 @@ body {
     border-bottom: none; /* Removed pink line */
 }
 
+
+
 .name {
     font-size: 3rem;
-    color: #ffffff; /* White color for the name */
+    color: #ffffff; /* White color for your name */
     font-weight: bold;
-    position: relative; /* Required for positioning "HELLO" */
-    text-align: center; /* Keeps the name centered */
+    text-align: center;
+    margin: 0;
 }
 
-.hello {
-    font-size: 1.2rem; /* Slightly smaller than the name */
-    color: #e91e63; /* Pink color for "HELLO" */
-    position: absolute; /* Position relative to the name */
-    top: -25px; /* Slightly above the name */
-    left: 0; /* Align to the left of the name */
-    font-weight: normal; /* Softer styling compared to the name */
+.hi {
+    font-size: 1.5rem; /* Slightly smaller than your name */
+    color: #e91e63; /* Pink color */
+    display: block; /* Places it on a separate line above the name */
+    font-weight: normal; /* Makes it visually distinct from the name */
+    margin-bottom: 10px; /* Adds spacing between "HI" and your name */
 }
-
 
 
 
