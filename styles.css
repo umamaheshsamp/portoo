@@ -21,8 +21,11 @@ body {
 
 .hello {
     font-size: 2rem;
-    color: #e91e63; /* Pink color for HELLO */
-    margin-bottom: 10px;
+    color: #e91e63; /* Pink color */
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    margin: 0;
 }
 
 .name {
