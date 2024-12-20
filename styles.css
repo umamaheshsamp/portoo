@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: #1a1a1a;
+    background: #000000; /* Uniform dark black background */
     color: #e91e63;
     display: flex;
     flex-direction: column;
@@ -13,21 +13,21 @@ body {
 /* Header Styling */
 .hero {
     text-align: center;
-    background: #1a1a1a;
+    background: #000000;
     padding: 50px 20px;
     width: 100%;
-    border-bottom: 2px solid #e91e63;
+    border-bottom: none; /* Removed pink line */
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+.hello {
+    font-size: 2rem;
+    color: #e91e63; /* Pink color for HELLO */
+    margin-bottom: 10px;
 }
 
 .name {
     font-size: 3rem;
-    color: #e91e63;
+    color: #ffffff; /* White color for your name */
     font-weight: bold;
     margin-bottom: 10px;
 }
