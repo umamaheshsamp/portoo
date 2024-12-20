@@ -19,27 +19,28 @@ body {
     border-bottom: none; /* Removed pink line */
 }
 
-.name {
-    font-size: 3rem;
-    color: #ffffff; /* White color for your name */
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
+.intro {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
     position: relative;
 }
 
 .hi {
     font-size: 2rem; /* Slightly smaller than your name */
     color: #e91e63; /* Pink color */
-    display: block; /* Places it on a separate line above the name */
-    font-weight: normal; /* Makes it visually distinct from the name */
-    margin-bottom: -10px; /* Adds spacing between "HI" and your name */
-    position: relative;
-    top: 10%; /* Adjust vertical positioning */
-    left: 5%; 
+    font-weight: normal;
+    margin: 0;
+    padding-left: 10px; /* Add some spacing to the left */
 }
 
-
+.name {
+    font-size: 3rem;
+    color: #ffffff; /* White color for your name */
+    font-weight: bold;
+    margin: -10px 0 0 10px; /* Add spacing above the name */
+    text-align: left; /* Ensure left alignment */
+}
 
 .subtitle {
     font-size: 1.5rem;
@@ -118,24 +119,4 @@ footer {
         font-size: 2.5rem;
     }
 
-    .hi {
-        font-size: 1.2rem;
-    }
-
-    .subtitle {
-        font-size: 1.2rem;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-    }
-
-    section ul li {
-        font-size: 1rem;
-    }
-
-    footer {
-        font-size: 0.7rem;
-    }
-}
-
+    .
