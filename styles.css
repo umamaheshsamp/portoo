@@ -23,16 +23,19 @@ body {
     font-size: 3rem;
     color: #ffffff; /* White color for the name */
     font-weight: bold;
-    position: relative; /* Required for positioning the "HELLO" inside */
+    position: relative; /* Required for positioning "HELLO" */
+    text-align: center; /* Keeps the name centered */
 }
 
 .hello {
-    font-size: 1.2rem;
-    color: #e91e63; /* Pink color */
-    position: absolute;
-    top: -20px; /* Adjust to your preference */
+    font-size: 1.2rem; /* Slightly smaller than the name */
+    color: #e91e63; /* Pink color for "HELLO" */
+    position: absolute; /* Position relative to the name */
+    top: -25px; /* Slightly above the name */
     left: 0; /* Align to the left of the name */
+    font-weight: normal; /* Softer styling compared to the name */
 }
+
 
 
 
