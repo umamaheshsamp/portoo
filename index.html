@@ -75,8 +75,9 @@
                             HR Data Dashboard - Insights into workforce analytics and HR KPIs.
                         </a>
                     </li>
+                    <!-- Updated Paris Dashboard Link -->
                     <li>
-                        <a href="projects/paris-olympic-dashboard.html" target="_blank">
+                        <a href="javascript:void(0)" onclick="document.getElementById('paris-dashboard').style.display = 'block';">
                             Paris Olympic Dashboard - Highlighted Olympic events and performances data.
                         </a>
                     </li>
@@ -160,5 +161,10 @@
 
         typeEffect();
     </script>
+
+    <!-- Hidden iframe container for the Paris Olympic Dashboard -->
+    <div id="paris-dashboard" style="display:none; width:100%; height:500px; margin-top:20px;">
+        <iframe title="Paris olympic" width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiYTE4YzM0YmItZmFmNC00YWZlLThiMzAtZmE1M2VhYTFkZWVhIiwidCI6IjMwZDRjZTYxLTc3MWUtNDM0NS04MWMzLTE5M2I5NjUyOWViMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
 </body>
 </html>
