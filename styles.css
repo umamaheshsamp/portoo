@@ -15,7 +15,12 @@ body {
 .hero {
     text-align: center;
     background: #000000; /* Uniform dark black */
-    padding: 50px 20px;
+    
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+
     width: 100%;
     border-bottom: none; /* Removed pink line */
 }
