@@ -37,7 +37,7 @@ body {
     color: #e91e63; /* Pink color */
     font-weight: normal;
     margin: 0;
-    margin-bottom: 15px; /* Increased spacing below "Hi," */
+    margin-bottom: 25px; /* Increased spacing below "Hi," */
     display: inline-block; /* Ensure it respects the margin */
 }
 
