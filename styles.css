@@ -32,18 +32,22 @@ body {
     position: relative;
 }
 
+
 .hi {
     font-size: 2rem; /* Slightly smaller than your name */
     color: #e91e63; /* Pink color */
     font-weight: normal;
     margin: 0;
-    padding-top: 30px;
-    padding-right: 15px;
-    
-    padding-left: 5px;
-    
+    padding: 0;
+
+    /* Adjust positioning to move "Hi" to the desired location */
+    position: absolute; /* Absolute positioning to place it freely */
+    top: 20%; /* Adjust vertical position */
+    left: 10%; /* Adjust horizontal position */
+
     display: inline-block; /* Ensure it respects the margin */
 }
+
 
 .name {
     font-size: 3rem;
