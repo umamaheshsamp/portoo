@@ -41,13 +41,13 @@ body {
     margin: 0;
     padding: 0;
 
-    /* Adjust positioning to move "Hi" to the desired location */
-    position: absolute; /* Absolute positioning to place it freely */
-    top: 20%; /* Adjust vertical position */
-    left: 10%; /* Adjust horizontal position */
-
-    display: inline-block; /* Ensure it respects the margin */
+    /* Adjust positioning */
+    position: relative; /* Or absolute depending on your layout */
+    top: -30px; /* Adjust vertically to move it above the name */
+    left: 0; /* Align it properly to the left */
+    display: inline-block;
 }
+
 
 
 .name {
