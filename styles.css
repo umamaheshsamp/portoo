@@ -25,28 +25,28 @@ body {
     border-bottom: none; /* Removed pink line */
 }
 
+
 .intro {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align text to the left */
-    position: relative; /* Add this for relative positioning */
-}
-
-
-
-.hi {
-    font-size: 2rem; /* Slightly smaller than your name */
-    color: #e91e63; /* Pink color */
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-
-    /* Adjust positioning */
-    position: relative; /* Or absolute depending on your layout */
-    top: -30px; /* Adjust vertically to move it above the name */
-    left: 0; /* Align it properly to the left */
+    position: relative; /* Set this to relative for proper positioning of children */
     display: inline-block;
 }
+
+.hi-container {
+    position: absolute; /* Enable absolute positioning for the "Hi" */
+    top: -50px; /* Move "Hi" upwards to the circle's position */
+    left: -30px; /* Adjust this value for horizontal alignment */
+    background-color: #1e90ff; /* Blue background for the circle */
+    color: #ffffff; /* White text for "Hi" */
+    border-radius: 50%; /* Make the container circular */
+    width: 80px; /* Adjust width of the circle */
+    height: 80px; /* Adjust height of the circle */
+    display: flex; /* Center the text inside the circle */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Adjust font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for the circle */
+}
+
 
 
 
