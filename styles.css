@@ -162,6 +162,12 @@ footer {
   border-top: 2px solid #e91e63;
 }
 
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 footer .social-links a {
   color: #e91e63;
   margin: 0 5px;
@@ -172,6 +178,13 @@ footer .social-links a {
 footer .social-links a:hover {
   color: #00e676;
 }
+
+/* Override link color in the contact section */
+#contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
