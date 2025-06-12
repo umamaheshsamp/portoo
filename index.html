@@ -134,57 +134,48 @@
     <footer>
         <p>&copy; 2024 Uma Mahesh Reddy. All Rights Reserved.</p>
     </footer>
-<script>
-    const prefix = "I'm a D";
-    const firstRole = "Data Scientist";
-    const secondRole = "Data Analyst";
 
-    const typingElement = document.querySelector('.typing');
+    
+    <script>
+    const roles = ["Data Scientist", "Data Analyst"];
+    const prefix = "I'm a ";
+    let typingElement = document.querySelector('.typing');
 
+    let currentRoleIndex = 0;
     let currentText = "";
-    let i = 0;
-    let isFirstDone = false;
+    let charIndex = 0;
+    let isDeleting = false;
 
-    function typeFirst() {
-        if (i < firstRole.length) {
-            currentText = "I'm a " + firstRole.substring(0, i + 1);
-            typingElement.textContent = currentText;
-            i++;
-            setTimeout(typeFirst, 100);
-        } else {
-            setTimeout(deleteToD, 1000);
+    function typeEffect() {
+        const fullText = roles[currentRoleIndex];
+        const displayText = isDeleting
+            ? fullText.substring(0, charIndex--)
+            : fullText.substring(0, charIndex++);
+
+        typingElement.textContent = prefix + displayText;
+
+        let delay = 100;
+
+        if (isDeleting) {
+            delay = 60;
         }
+
+        if (!isDeleting && charIndex === fullText.length + 1) {
+            delay = 1200;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 4) {
+            // Stop at "I'm a D"
+            delay = 400;
+            isDeleting = false;
+            currentRoleIndex = (currentRoleIndex + 1) % roles.length;
+        }
+
+        setTimeout(typeEffect, delay);
     }
 
-    function deleteToD() {
-        if (i > 6) { // 6 chars for "I'm a D"
-            i--;
-            currentText = "I'm a " + firstRole.substring(0, i);
-            typingElement.textContent = currentText;
-            setTimeout(deleteToD, 60);
-        } else {
-            setTimeout(typeSecond, 500);
-        }
-    }
-
-    let j = 1; // start from "a" in "Data"
-    function typeSecond() {
-        if (j < secondRole.length) {
-            currentText = prefix + secondRole.substring(1, j + 1); // skip first "D" since already there
-            typingElement.textContent = currentText;
-            j++;
-            setTimeout(typeSecond, 100);
-        } else {
-            setTimeout(() => {
-                i = 0;
-                j = 1;
-                typeFirst();
-            }, 1500); // loop the animation
-        }
-    }
-
-    typeFirst();
+    typeEffect();
 </script>
+
 
 
     
