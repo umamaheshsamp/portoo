@@ -134,39 +134,58 @@
     <footer>
         <p>&copy; 2024 Uma Mahesh Reddy. All Rights Reserved.</p>
     </footer>
-
-    <script>
-    const prefix = "I'm a ";
-    const roles = ["Data Scientist", "Data Analyst"];
-    let roleIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
+<script>
+    const prefix = "I'm a D";
+    const firstRole = "Data Scientist";
+    const secondRole = "Data Analyst";
 
     const typingElement = document.querySelector('.typing');
 
-    function type() {
-        const currentRole = roles[roleIndex];
-        const displayText = prefix + currentRole.substring(0, charIndex);
+    let currentText = "";
+    let i = 0;
+    let isFirstDone = false;
 
-        typingElement.textContent = displayText;
-
-        if (!isDeleting && charIndex < currentRole.length) {
-            charIndex++;
-            setTimeout(type, 100);
-        } else if (isDeleting && charIndex > 0) {
-            charIndex--;
-            setTimeout(type, 60);
+    function typeFirst() {
+        if (i < firstRole.length) {
+            currentText = "I'm a " + firstRole.substring(0, i + 1);
+            typingElement.textContent = currentText;
+            i++;
+            setTimeout(typeFirst, 100);
         } else {
-            isDeleting = !isDeleting;
-            if (!isDeleting) {
-                roleIndex = (roleIndex + 1) % roles.length;
-            }
-            setTimeout(type, 1000);
+            setTimeout(deleteToD, 1000);
         }
     }
 
-    type();
+    function deleteToD() {
+        if (i > 6) { // 6 chars for "I'm a D"
+            i--;
+            currentText = "I'm a " + firstRole.substring(0, i);
+            typingElement.textContent = currentText;
+            setTimeout(deleteToD, 60);
+        } else {
+            setTimeout(typeSecond, 500);
+        }
+    }
+
+    let j = 1; // start from "a" in "Data"
+    function typeSecond() {
+        if (j < secondRole.length) {
+            currentText = prefix + secondRole.substring(1, j + 1); // skip first "D" since already there
+            typingElement.textContent = currentText;
+            j++;
+            setTimeout(typeSecond, 100);
+        } else {
+            setTimeout(() => {
+                i = 0;
+                j = 1;
+                typeFirst();
+            }, 1500); // loop the animation
+        }
+    }
+
+    typeFirst();
 </script>
+
 
     
       
