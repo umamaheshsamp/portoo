@@ -136,36 +136,41 @@
     </footer>
 
     <script>
-        const words = ["I'm a Data Scientist", "I'm a Data Analyst"];
-        let i = 0;
-        let j = 0;
-        let currentWord = "";
-        const typingElement = document.querySelector('.typing');
+    const prefix = "I'm a ";
+    const roles = ["Data Scientist", "Data Analyst"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
 
-        function typeEffect() {
-            if (j < words[i].length) {
-                currentWord += words[i][j];
-                typingElement.textContent = currentWord;
-                j++;
-                setTimeout(typeEffect, 100);
-            } else {
-                setTimeout(deleteEffect, 1000);
+    const typingElement = document.querySelector('.typing');
+
+    function type() {
+        const currentRole = roles[roleIndex];
+        const displayText = prefix + currentRole.substring(0, charIndex);
+
+        typingElement.textContent = displayText;
+
+        if (!isDeleting && charIndex < currentRole.length) {
+            charIndex++;
+            setTimeout(type, 100);
+        } else if (isDeleting && charIndex > 0) {
+            charIndex--;
+            setTimeout(type, 60);
+        } else {
+            isDeleting = !isDeleting;
+            if (!isDeleting) {
+                roleIndex = (roleIndex + 1) % roles.length;
             }
+            setTimeout(type, 1000);
         }
+    }
 
-        function deleteEffect() {
-            if (j > 0) {
-                currentWord = currentWord.slice(0, -1);
-                typingElement.textContent = currentWord;
-                j--;
-                setTimeout(deleteEffect, 100);
-            } else {
-                i = (i + 1) % words.length;
-                setTimeout(typeEffect, 500);
-            }
-        }
+    type();
+</script>
 
-        typeEffect();
-    </script>
+    
+      
+
+        
 </body>
 </html>
