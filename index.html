@@ -9,10 +9,10 @@
 </head>
 <body>
 
-  <!-- ✅ Sticky Header -->
-  <div class="sticky-header" id="stickyHeader">
-    <div class="sticky-name">Uma Mahesh Reddy</div>
-    <nav class="sticky-nav">
+  <!-- 🔵 Scroll Navbar (Initially hidden) -->
+  <div class="top-bar" id="topBar">
+    <div class="top-left-name">Uma Mahesh Reddy</div>
+    <nav class="top-nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -23,8 +23,8 @@
     </nav>
   </div>
 
-  <!-- ✅ Hero Section -->
-  <header class="hero">
+  <!-- 🔵 Hero Section -->
+  <header class="hero" id="hero">
     <div class="container">
       <div class="intro">
         <h1 class="name">I'm Uma Mahesh Reddy</h1>
@@ -33,6 +33,7 @@
     </div>
   </header>
 
+  <!-- 🔵 Main Content -->
   <main>
     <section id="about">
       <div class="container">
@@ -132,7 +133,22 @@
     <p>&copy; 2024 Uma Mahesh Reddy. All Rights Reserved.</p>
   </footer>
 
+  <!-- 🔵 JavaScript -->
   <script>
+    const topBar = document.getElementById("topBar");
+    const hero = document.getElementById("hero");
+    const triggerPoint = 100;
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > triggerPoint) {
+        topBar.classList.add("show");
+        hero.classList.add("fade-out");
+      } else {
+        topBar.classList.remove("show");
+        hero.classList.remove("fade-out");
+      }
+    });
+
     // Typing effect
     const roles = ["Data Scientist", "Data Analyst"];
     const typingElement = document.querySelector('.typing');
@@ -155,18 +171,6 @@
     }
 
     typeEffect();
-
-    // Sticky nav show on scroll
-    const stickyHeader = document.getElementById("stickyHeader");
-    const triggerPoint = document.querySelector("#about").offsetTop;
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY >= triggerPoint - 100) {
-        stickyHeader.classList.add("show");
-      } else {
-        stickyHeader.classList.remove("show");
-      }
-    });
   </script>
 </body>
 </html>
