@@ -7,6 +7,51 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Top Sticky Navigation Bar */
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 1000;
+  border-bottom: 2px solid #e91e63;
+}
+
+.top-bar.show {
+  transform: translateY(0);
+}
+
+.top-left-name {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.top-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  color: #00e676;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.top-nav a:hover {
+  color: #e91e63;
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -36,23 +81,33 @@ body {
   font-weight: 500;
 }
 
+/* Main Container */
+main {
+  padding: 20px 10px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Section Styling */
 section {
-  padding: 40px 20px;
   background: #121212;
-  margin: 10px 0;
+  margin: 40px 0;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  padding: 30px;
+  text-align: center;
 }
 
 section h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
   color: #00e676;
-  text-align: center;
+  display: inline-block;
   border-bottom: 2px solid #e91e63;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
 }
 
+/* Section Content */
 section ul {
   list-style: none;
   padding: 0;
@@ -62,44 +117,7 @@ section ul li,
 section p {
   font-size: 1.1rem;
   color: #fff;
-}
-
-/* 🔵 Top nav and name on scroll */
-.top-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #000;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transform: translateY(-100%);
-  transition: transform 0.4s ease-in-out;
-  z-index: 1000;
-  border-bottom: 2px solid #e91e63;
-}
-
-.top-bar.show {
-  transform: translateY(0);
-}
-
-.top-left-name {
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.top-nav a {
-  margin-left: 15px;
-  color: #00e676;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.top-nav a:hover {
-  color: #e91e63;
+  margin-bottom: 10px;
 }
 
 /* Projects Grid */
@@ -166,31 +184,22 @@ footer {
   border-top: 2px solid #e91e63;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
   .name {
     font-size: 2rem;
   }
+
   .subtitle {
     font-size: 1.2rem;
   }
+
   section h2 {
     font-size: 1.5rem;
   }
-  section ul li {
-    font-size: 1rem;
-  }
-  .project-card img {
-    height: 130px;
-  }
 
   .top-nav {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  .top-nav a {
-    margin: 5px;
+    justify-content: flex-start;
   }
 }
