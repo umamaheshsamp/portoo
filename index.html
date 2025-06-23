@@ -4,22 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Uma Mahesh Reddy | Portfolio</title>
+
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <nav id="navbar" class="hidden">
-    <div class="nav-left">Uma Mahesh Reddy</div>
-    <div class="nav-right">
-      <a href="#About Me">About</a>
-      <a href="#Projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <a href="UmaMahesh_Resume.pdf" download class="resume-btn">Resume</a>
-    </div>
-  </nav>
-
-  <header class="hero">
+  <header class="hero" data-aos="fade-down">
     <div class="container">
       <div class="intro">
         <span class="hi">Hi,</span>
@@ -32,113 +23,119 @@
   </header>
 
   <main>
-    <section id="About Me">
+    <section id="about" data-aos="fade-right">
       <div class="container">
         <h2>About Me</h2>
         <p>
-          I'm a Data Scientist with expertise in machine learning, statistical analysis, and AI-driven solutions. Skilled in Python, SQL, and Power BI for data-driven decision-making and predictive modeling. Experienced in handling large datasets, classification problems, and NLP applications. Passionate about leveraging advanced analytics to drive business impact and innovation.
+          I'm a Data Scientist with expertise in machine learning, statistical analysis, and AI-driven solutions.
+          Skilled in Python, SQL, and Power BI for data-driven decision-making and predictive modeling.
+          Experienced in handling large datasets, classification problems, and NLP applications.
         </p>
       </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" data-aos="fade-left">
       <div class="container">
         <h2>Skills</h2>
         <ul>
           <li>Data Analysis</li>
-          <li>Data Scientist</li>
+          <li>Data Science</li>
           <li>Machine Learning</li>
           <li>SQL</li>
           <li>Power BI</li>
+          <li>Deep Learning</li>
+          <li>NLP</li>
+          <li>LLM</li>
+          <li>OpenCV</li>
         </ul>
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" data-aos="fade-up">
       <div class="container">
         <h2>Experience</h2>
         <h3>Data Analyst Intern</h3>
         <p><strong>Cognifyz Technologies | Oct 2024 - Nov 2024</strong></p>
         <ul>
-          <li>Assisted in collecting, cleaning, and analyzing datasets to support business decision-making.</li>
-          <li>Used Python for data analysis, identifying trends, and extracting insights.</li>
-          <li>Collaborated with team members to create detailed reports for stakeholders.</li>
+          <li>Performed data collection, cleaning, and exploratory analysis.</li>
+          <li>Used Pandas & NumPy to analyze trends and patterns.</li>
+          <li>Created visualizations to support strategic planning.</li>
         </ul>
       </div>
     </section>
 
-    <section id="Projects">
+    <section id="projects" data-aos="fade-up">
       <div class="container">
         <h2>Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <h3>Flight Fare Prediction</h3>
-            <p>ML model to predict flight ticket prices.</p>
-            <a href="https://github.com/umamahesh06/python-projects/blob/main/Flight_Fare_Prediction.ipynb" target="_blank">View Project</a>
+
+        <h3>ML Projects</h3>
+        <div class="project-card">
+          <img src="images/FlightAware Flight Tracker iPhone App.jpeg" alt="Project Image">
+          <div class="project-info">
+            <a href="https://github.com/umamahesh06/python-projects/blob/main/Flight_Fare_Prediction.ipynb" target="_blank">Flight Fare Prediction</a>
+            <p>Predicts flight ticket prices using ML.</p>
           </div>
-          <div class="project-card">
-            <h3>Spam Ham Detection</h3>
-            <p>Classification model to detect spam messages.</p>
-            <a href="https://github.com/umamahesh06/python-projects/blob/main/SpamHamDetection.ipynb" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="images/download (1).jpeg" alt="Project Image">
+          <div class="project-info">
+            <a href="https://github.com/umamahesh06/python-projects/blob/main/credit_card_fraud_detection.ipynb" target="_blank">Credit Card Fraud Detection</a>
+            <p>Detects fraudulent transactions using ML.</p>
           </div>
-          <div class="project-card">
-            <h3>Credit Card Fraud Detection</h3>
-            <p>ML model to detect fraudulent transactions.</p>
-            <a href="https://github.com/umamahesh06/python-projects/blob/main/credit_card_fraud_detection.ipynb" target="_blank">View Project</a>
+        </div>
+
+        <h3>Power BI Projects</h3>
+        <div class="project-card">
+          <img src="images/FlightAware Flight Tracker iPhone App.jpeg" alt="Project Image">
+          <div class="project-info">
+            <a href="projects/flight-dashboard.html" target="_blank">Flight Dashboard</a>
+            <p>Visualized key flight metrics.</p>
           </div>
-          <div class="project-card">
-            <h3>Boxes Sales Dashboard</h3>
-            <p>Power BI sales trend dashboard.</p>
-            <a href="projects/boxes-sales-dashboard.html" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="images/download (1).jpeg" alt="Project Image">
+          <div class="project-info">
+            <a href="projects/hr-data-dashboard.html" target="_blank">HR Data Dashboard</a>
+            <p>Insights into workforce analytics.</p>
           </div>
-          <div class="project-card">
-            <h3>Flight Dashboard</h3>
-            <p>Visualizes key flight metrics.</p>
-            <a href="projects/flight-dashboard.html" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>HR Data Dashboard</h3>
-            <p>HR KPIs and analytics insights.</p>
-            <a href="projects/hr-data-dashboard.html" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Paris Olympic Dashboard</h3>
-            <p>Event performance analytics.</p>
-            <a href="projects/paris-olympic-dashboard.html" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Velora Analysis</h3>
-            <p>Customer insights and trends.</p>
-            <a href="projects/Velora_Analysis.html" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="images/a9addff7-19b8-4e49-9ed3-597bd94f8287.jpeg" alt="Project Image">
+          <div class="project-info">
+            <a href="projects/paris-olympic-dashboard.html" target="_blank">Paris Olympic Dashboard</a>
+            <p>Olympic events and performance visualizations.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="education">
+    <section id="education" data-aos="fade-right">
       <div class="container">
         <h2>Education</h2>
         <ul>
-          <li>B.Tech in Computer Science, CGPA: 7.29<br>Malineni Perumallu Educational Society’s Group of Institutions (2020 - 2024)</li>
+          <li>B.Tech in Computer Science, CGPA: 7.23<br>Malineni Perumallu Educational Society (2020 - 2024)</li>
           <li>Intermediate, CGPA: 6.74<br>Sri Chaitanya Junior College (2018 - 2020)</li>
           <li>SSC, CGPA: 9.7<br>Sri Viveka Public School (2017)</li>
         </ul>
       </div>
     </section>
 
-    <section id="certificates">
+    <section id="certificates" data-aos="fade-left">
       <div class="container">
         <h2>Certificates</h2>
         <ul>
-          <li><a href="https://learn.365datascience.com/c/497b395f41" target="_blank">Certification of SQL - 365DataScience</a></li>
-          <li><a href="https://courses.cognitiveclass.ai/certificates/438527fb3a0c408ab3b3fbca487d786f" target="_blank">IBM Certification on Data Science (Python) - IBM</a></li>
-          <li><a href="https://www.udemy.com/certificate/UC-0d7b9fef-c049-4949-8ab9-085757c70dc0/" target="_blank">Python - Data Analytics - Real World Hands-on Projects - Udemy</a></li>
-          <li><a href="https://www.udemy.com/certificate/UC-adca44e1-60d1-4471-9c56-10e36398d3e0/" target="_blank">Certification of Power BI - Udemy</a></li>
+          <li><a href="https://learn.365datascience.com/c/497b395f41" target="_blank">SQL Certification – 365DataScience</a></li>
+          <li><a href="https://courses.cognitiveclass.ai/certificates/438527fb3a0c408ab3b3fbca487d786f" target="_blank">Data Science with Python – IBM</a></li>
+          <li><a href="https://www.udemy.com/certificate/UC-0d7b9fef-c049-4949-8ab9-085757c70dc0/" target="_blank">Real-World Analytics – Udemy</a></li>
+          <li><a href="https://www.udemy.com/certificate/UC-adca44e1-60d1-4471-9c56-10e36398d3e0/" target="_blank">Power BI Visualization – Udemy</a></li>
         </ul>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <div class="container">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:umamaheshreddy06981@gmail.com">umamaheshreddy06981@gmail.com</a></p>
@@ -152,23 +149,20 @@
     <p>&copy; 2024 Uma Mahesh Reddy. All Rights Reserved.</p>
   </footer>
 
+  <!-- Typing effect script -->
   <script>
     const roles = ["Data Scientist", "Data Analyst"];
     const prefix = "I'm a ";
     let typingElement = document.querySelector('.typing');
-
     let currentRoleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
 
     function typeEffect() {
       const fullText = roles[currentRoleIndex];
-      const displayText = isDeleting
-        ? fullText.substring(0, charIndex--)
-        : fullText.substring(0, charIndex++);
+      const displayText = isDeleting ? fullText.substring(0, charIndex--) : fullText.substring(0, charIndex++);
 
       typingElement.textContent = prefix + displayText;
-
       let delay = isDeleting ? 60 : 100;
 
       if (!isDeleting && charIndex === fullText.length + 1) {
@@ -182,20 +176,11 @@
 
       setTimeout(typeEffect, delay);
     }
-
     typeEffect();
-
-    const navbar = document.getElementById('navbar');
-    let lastScrollTop = 0;
-    window.addEventListener('scroll', function () {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > 100 && scrollTop > lastScrollTop) {
-        navbar.classList.remove('hidden');
-      } else if (scrollTop <= 100) {
-        navbar.classList.add('hidden');
-      }
-      lastScrollTop = scrollTop;
-    });
   </script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
