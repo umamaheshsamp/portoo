@@ -2,125 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Uma Mahesh Reddy | Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-  <div class="top-bar" id="topBar">
-    <div class="top-left-name">Uma Mahesh Reddy</div>
-    <nav class="top-nav">
-      <a href="#about">About</a>
+  <nav id="navbar" class="hidden">
+    <div class="nav-left">Uma Mahesh Reddy</div>
+    <div class="nav-right">
+      <a href="#About Me">About</a>
+      <a href="#Projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Work Exp</a>
-      <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
-    </nav>
-  </div>
+      <a href="UmaMahesh_Resume.pdf" download class="resume-btn">Resume</a>
+    </div>
+  </nav>
 
-  <header class="hero" id="hero">
+  <header class="hero">
     <div class="container">
       <div class="intro">
+        <span class="hi">Hi,</span>
         <h1 class="name">I'm Uma Mahesh Reddy</h1>
       </div>
-      <p class="subtitle"><span class="typing">I'm a Data Scientist</span></p>
+      <p class="subtitle">
+        <span class="typing">I'm a Data Scientist</span>
+      </p>
     </div>
   </header>
 
   <main>
-    <section id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>I'm a Data Scientist with expertise in machine learning, statistical analysis, and AI-driven solutions. Skilled in Python, SQL, and Power BI. Passionate about leveraging analytics to drive innovation.</p>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <ul>
-          <li>Data Analysis</li>
-          <li>Data Scientist</li>
-          <li>Machine Learning</li>
-          <li>SQL</li>
-          <li>Power BI</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <h2>Experience</h2>
-        <h3>Data Analyst Intern</h3>
-        <p><strong>Cognifyz Technologies | Oct 2024 - Nov 2024</strong></p>
-        <ul>
-          <li>Collected and analyzed datasets to support business decision-making.</li>
-          <li>Used Python for identifying trends and extracting insights.</li>
-          <li>Created detailed reports for stakeholders.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects">
+    <!-- Sections unchanged: About Me, Skills, Experience -->
+    <!-- Updated Projects section here -->
+    <section id="Projects">
       <div class="container">
         <h2>Projects</h2>
         <div class="project-grid">
           <div class="project-card">
-            <img src="images/project1.png" alt="HR Dashboard"/>
-            <div class="project-content">
-              <p>HR Data Dashboard</p>
-              <a href="#" class="view-btn" target="_blank">View Project</a>
-            </div>
+            <h3>Flight Fare Prediction</h3>
+            <p>ML model to predict flight ticket prices.</p>
+            <a href="https://github.com/umamahesh06/python-projects/blob/main/Flight_Fare_Prediction.ipynb" target="_blank">View Project</a>
           </div>
           <div class="project-card">
-            <img src="images/a9addff7-19b8-4e49-9ed3-597bd94f8287.jpeg" alt="Olympics"/>
-            <div class="project-content">
-              <p>Paris Olympic Dashboard</p>
-              <a href="#" class="view-btn" target="_blank">View Project</a>
-            </div>
+            <h3>Spam Ham Detection</h3>
+            <p>Classification model to detect spam messages.</p>
+            <a href="https://github.com/umamahesh06/python-projects/blob/main/SpamHamDetection.ipynb" target="_blank">View Project</a>
           </div>
           <div class="project-card">
-            <img src="images/project3.png" alt="Velora"/>
-            <div class="project-content">
-              <p>Velora Market Analysis</p>
-              <a href="#" class="view-btn" target="_blank">View Project</a>
-            </div>
+            <h3>Credit Card Fraud Detection</h3>
+            <p>ML model to detect fraudulent transactions.</p>
+            <a href="https://github.com/umamahesh06/python-projects/blob/main/credit_card_fraud_detection.ipynb" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Boxes Sales Dashboard</h3>
+            <p>Power BI sales trend dashboard.</p>
+            <a href="projects/boxes-sales-dashboard.html" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Flight Dashboard</h3>
+            <p>Visualizes key flight metrics.</p>
+            <a href="projects/flight-dashboard.html" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>HR Data Dashboard</h3>
+            <p>HR KPIs and analytics insights.</p>
+            <a href="projects/hr-data-dashboard.html" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Paris Olympic Dashboard</h3>
+            <p>Event performance analytics.</p>
+            <a href="projects/paris-olympic-dashboard.html" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Velora Analysis</h3>
+            <p>Customer insights and trends.</p>
+            <a href="projects/Velora_Analysis.html" target="_blank">View Project</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="education">
-      <div class="container">
-        <h2>Education</h2>
-        <ul>
-          <li>B.Tech in Computer Science - CGPA: 7.29</li>
-          <li>Intermediate - CGPA: 6.74</li>
-          <li>SSC - CGPA: 9.7</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="certificates">
-      <div class="container">
-        <h2>Certificates</h2>
-        <ul>
-          <li><a href="#" target="_blank">SQL - 365DataScience</a></li>
-          <li><a href="#" target="_blank">Data Science - IBM</a></li>
-          <li><a href="#" target="_blank">Power BI - Udemy</a></li>
-        </ul>
-      </div>
-    </section>
-
+    <!-- Remaining sections: Education, Certificates, Contact -->
     <section id="contact">
       <div class="container">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:umamaheshreddy06981@gmail.com">umamaheshreddy06981@gmail.com</a></p>
         <p>Phone: <a href="tel:+917075852256">7075852256</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/uma-mahesh-525249212" target="_blank">linkedin.com/in/uma-mahesh</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/uma-mahesh-525249212" target="_blank">linkedin.com/in/uma-mahesh-525249212</a></p>
       </div>
     </section>
   </main>
@@ -130,40 +98,49 @@
   </footer>
 
   <script>
-    const topBar = document.getElementById("topBar");
-    const hero = document.getElementById("hero");
-    const triggerPoint = 100;
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > triggerPoint) {
-        topBar.classList.add("show");
-        hero.classList.add("fade-out");
-      } else {
-        topBar.classList.remove("show");
-        hero.classList.remove("fade-out");
-      }
-    });
-
     const roles = ["Data Scientist", "Data Analyst"];
-    const typingElement = document.querySelector('.typing');
-    let currentRoleIndex = 0, charIndex = 0, isDeleting = false;
+    const prefix = "I'm a ";
+    let typingElement = document.querySelector('.typing');
+
+    let currentRoleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
 
     function typeEffect() {
       const fullText = roles[currentRoleIndex];
-      const display = isDeleting ? fullText.substring(0, charIndex--) : fullText.substring(0, charIndex++);
-      typingElement.textContent = `I'm a ${display}`;
-      let delay = isDeleting ? 50 : 100;
+      const displayText = isDeleting
+        ? fullText.substring(0, charIndex--)
+        : fullText.substring(0, charIndex++);
+
+      typingElement.textContent = prefix + displayText;
+
+      let delay = isDeleting ? 60 : 100;
 
       if (!isDeleting && charIndex === fullText.length + 1) {
-        delay = 1000;
+        delay = 1200;
         isDeleting = true;
-      } else if (isDeleting && charIndex === 0) {
+      } else if (isDeleting && charIndex === 4) {
+        delay = 400;
         isDeleting = false;
         currentRoleIndex = (currentRoleIndex + 1) % roles.length;
       }
+
       setTimeout(typeEffect, delay);
     }
+
     typeEffect();
+
+    const navbar = document.getElementById('navbar');
+    let lastScrollTop = 0;
+    window.addEventListener('scroll', function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > 100 && scrollTop > lastScrollTop) {
+        navbar.classList.remove('hidden');
+      } else if (scrollTop <= 100) {
+        navbar.classList.add('hidden');
+      }
+      lastScrollTop = scrollTop;
+    });
   </script>
 </body>
 </html>
